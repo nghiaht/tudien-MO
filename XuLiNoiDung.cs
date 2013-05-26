@@ -56,3 +56,13 @@ static void Main(string[] args) {
                 }
             }
 }
+
+public static void ThemTu(Dictionary<string, string> DICT, string tu, string noidung) {
+            if (DICT.ContainsKey(tu))
+            {
+                DICT[tu] += noidung;
+                Program.duplicate++;
+            }
+            else
+                DICT.Add(tu, noidung);
+        }
